@@ -29,5 +29,6 @@ const sampleResponse = {
 
 export default (req, res) => {
   console.log(req);
+  console.log('query: ', req.intent.query);
   res.status(200).json(sampleResponse);
 }
